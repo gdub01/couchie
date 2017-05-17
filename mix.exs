@@ -5,6 +5,11 @@ defmodule Couchie.Mixfile do
 
    Designed to be a dependency in other projects.
    """
+   
+   def run(_) do
+      Mix.Project.build_structure
+      :ok
+  end
 
   @doc "Project Details"
   def project do
