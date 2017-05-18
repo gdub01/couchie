@@ -11,7 +11,7 @@ defmodule Couchie.Mixfile do
     [ app: :couchie,
       elixir: "~> 1.4",
       version: "0.0.6",
-      deps: deps ]
+      deps: deps() ]
   end
 
   def application do
