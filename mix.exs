@@ -5,11 +5,6 @@ defmodule Couchie.Mixfile do
 
    Designed to be a dependency in other projects.
    """
-   
-   def run(_) do
-      Mix.Project.build_structure
-      :ok
-  end
 
   @doc "Project Details"
   def project do
@@ -26,10 +21,10 @@ defmodule Couchie.Mixfile do
   end
 
   # Returns the list of dependencies in the format:
-  # {:erlmc, "0.1", git: "https://github.com/n1rvana/erlmc.git"}
+
   defp deps do
     [
-		  {:cberl, github: "chitika/cberl"}, #chitika is authoritative source
+      {:cberl, github: "chitika/cberl", manager: :rebar},
       {:poison, ">= 1.2.0"}
     ]
   end
